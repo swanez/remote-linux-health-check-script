@@ -1,0 +1,58 @@
+Enter the hostname of the server to inspect: example-server
+System Information
+==================
+Hostname: example-server
+FQDN: example-server.example.com
+IPv4 Address: 192.168.0.100
+Operating System: Linux
+Distribution: Ubuntu 22.04 LTS
+Kernel Version: 5.15.0-40-generic
+Uptime: up 7 days, 3 hours, 21 minutes
+
+CPU Usage
+=========
+CPU Model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+CPU Cores: 12
+Current CPU Usage: 27.8%
+Load Average (1/5/15 minutes): 2.15 1.76 1.35
+
+Memory Usage
+============
+              total        used        free      shared  buff/cache   available
+Mem:           16G         12G         2G         1G        2G          14G
+Swap:          4G          1G         3G
+
+Top 5 CPU Consuming Processes
+=============================
+USER                             PID CMD                                      %CPU %MEM     TIME     STARTED
+alice                            3456 /usr/bin/python3 /home/alice/app.py     35.5  1.5 02:13:45   2024-07-20 09:12
+bob                              7890 /usr/bin/java -jar /home/bob/app.jar    30.2  2.4 01:32:23   2024-07-20 08:45
+charlie                          1234 /usr/sbin/apache2 -k start              25.1  1.0 00:45:23   2024-07-20 07:10
+david                            5678 /usr/bin/mysqld_safe                    20.3  1.8 01:15:10   2024-07-20 06:00
+eve                              9012 /usr/bin/nginx -g daemon off;           15.5  0.8 00:32:15   2024-07-20 05:30
+
+Top 5 Memory Consuming Processes
+================================
+USER                             PID CMD                                      %CPU %MEM     TIME     STARTED
+bob                              7890 /usr/bin/java -jar /home/bob/app.jar    30.2  2.4 01:32:23   2024-07-20 08:45
+alice                            3456 /usr/bin/python3 /home/alice/app.py     35.5  1.5 02:13:45   2024-07-20 09:12
+david                            5678 /usr/bin/mysqld_safe                    20.3  1.8 01:15:10   2024-07-20 06:00
+charlie                          1234 /usr/sbin/apache2 -k start              25.1  1.0 00:45:23   2024-07-20 07:10
+eve                              9012 /usr/bin/nginx -g daemon off;           15.5  0.8 00:32:15   2024-07-20 05:30
+
+Disk Usage
+==========
+Filesystem                Size  Used Avail Use% Mounted on
+/dev/sda1                 100G   80G   20G  80% /
+/dev/sdb1                 200G  190G   10G  95% /data
+/dev/sdc1                 500G  450G   50G  90% /backup
+
+Health Check Summary of example-server
+======================================
+CPU Usage: OK (27.8%)
+Memory Usage: OK (75.0%)
+1 Minute Load Average: OK (2.15)
+5 Minute Load Average: OK (1.76)
+Filesystems Over 90% Usage:
+/dev/sdb1 (95%)
+/dev/sdc1 (90%)
