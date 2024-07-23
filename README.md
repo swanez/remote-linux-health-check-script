@@ -11,5 +11,5 @@ See detailed information under the "Sample Output" file.
 chmod +x health_check.sh
 
 3. <b>Run the script:<br></b>
-./file_name<br>
+./health_check.sh<br>
 Enter the hostname of the server to inspect when prompted. Ensure you have SSH access to the remote server.
