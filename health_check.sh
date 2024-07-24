@@ -50,7 +50,7 @@ echo ""
 # Memory Usage
 echo -e "${header_color}Memory Usage" 
 echo -e "============${default_color}" 
-memory_usage=$(free | grep Mem | awk '{print $3/$2 * 100.0}')
+memory_usage=$(free | grep Mem | awk '{print ($2 - $4) / $2 * 100.0}')
 free -h
 echo ""
 
