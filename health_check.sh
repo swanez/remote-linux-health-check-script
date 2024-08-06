@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Prompt for the hostname
-read -p "Enter the hostname of the server to inspect: " hostname
+read -p "Enter the hostname/IP of the server to inspect: " hostname
 
 # Check if the hostname is empty
 if [ -z "$hostname" ]; then
